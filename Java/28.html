@@ -1,0 +1,35 @@
+<html>
+<head>
+    <script>
+    function miFuncion(nombre){
+        //alert("Hola : "+nombre );
+        //document.getElementById("titulo1").innerHTML ="Hola: "+nombre;
+        var posIni = 0;
+        var posFin = 1;
+        var sumPos = 0;
+        var resultFinal = "";
+        for (var i = 0 ; i<= parseInt(nombre) ; i++ ){
+            sumPos = posIni + posFin ;
+            //alert (sumPos);
+            resultFinal += sumPos+"</br>";
+            posIni = posFin ;
+            posFin =  sumPos;
+            
+        }
+        document.getElementById("titulo1").innerHTML = resultFinal;
+    } 
+    
+    </script>
+</head>
+<body>
+        <h1 id="titulo1"></h1>
+    <h2 id="tituolo2"></h2>
+        <script>
+                var nombre =  prompt("Digite su Nombre: ");
+                miFuncion(nombre);
+            </script>
+        
+
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<html>
+<head>
+    <script>
+        function mifuncion(nombre) {
+          //  alert("hola : " + nombre);
+          document.getElementById ("titulo1").innerHTML= "hola : "+nombre;
+         var posini =0 ;
+         var posFin = 1 ;
+         var SumaPos =0;
+         var resulFinal= ""
+
+        for ( var i=0 ;i<= parseInt(nombre) ; i++ ){
+            
+            alert (SumaPos);
+            posini = posFin ;                    
+            posFin = SumaPos ;
+        }      
+
+    }
+
+    </script>
+</head>
+<body>    
+        <h1 id="titulo1"></h1>
+        <h2 id="titulo2"></h2>
+            
+     <script>
+        var nombre = prompt("Digite su nombre");
+        mifuncion(nombre);
+    </script>
+</body>
+
+</html>
